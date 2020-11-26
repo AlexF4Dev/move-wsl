@@ -1,3 +1,6 @@
+# Important set default user
+ubuntu2004.exe config --default-user <username>
+
 # Move WSL
 
 Bash, batch and PowerShell script to move WSL 1 and WSL 2 distros VHDX file to a different location.
