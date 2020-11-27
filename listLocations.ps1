@@ -2,6 +2,7 @@
 $items = Get-ChildItem -Path HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\*
 
 foreach($item in $items){
+    $item
     $distName = $item.GetValue('DistributionName')
     ''
     'WSL Distribution Name:' + $distName
@@ -10,3 +11,4 @@ foreach($item in $items){
     gci $basePath
 
 }
+
